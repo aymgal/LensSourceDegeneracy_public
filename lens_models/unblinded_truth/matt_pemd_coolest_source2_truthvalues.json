@@ -1,0 +1,214 @@
+{
+    "coordinates_origin": {
+	"dec": "+00d00m00s",
+	"ra": "00h00m00s"
+    },
+    "cosmology": {
+	"H0": 73.0,
+	"Om0": 0.3,
+	"astropy_name": "FlatLambdaCDM"
+    },
+    "instrument": {
+	"band": "F814W",
+	"name": "HST_WFPC2",
+	"pixel_size": 0.1,
+	"psf": {
+	    "description": null,
+	    "pixels": {
+		"field_of_view_x": [0,6.01],
+		"field_of_view_y": [0,6.01],
+		"fits_file": {
+		    "path": "psf.fits"
+		},
+		"num_pix_x": 601,
+		"num_pix_y": 601
+	    },
+	    "type": "PixelatedPSF"
+	},
+	"readout_noise": 6
+    },
+    "lensing_entities": [
+	{
+	    "mass_model": [
+		{
+		    "parameters": {
+			"gamma_ext": {
+			    "point_estimate": {
+				"value": 0.03
+			    },
+			    "posterior_stats": {
+				"mean": null,
+				"median": null,
+				"percentile_16th": null,
+				"percentile_84th": null
+			    },
+			    "prior": {
+				"type": null
+			    }
+			},
+			"phi_ext": {
+			    "point_estimate": {
+				"value": 15
+			    },
+			    "posterior_stats": {
+				"mean": null,
+				"median": null,
+				"percentile_16th": null,
+				"percentile_84th": null
+			    },
+			    "prior": {
+				"type": null
+			    }
+			}
+		    },
+		    "type": "ExternalShear"
+		}
+	    ],
+	    "name": "an external shear",
+	    "redshift": 0.2,
+	    "type": "MassField"
+	},
+	{
+	    "light_model": [],
+	    "mass_model": [
+		{
+		    "parameters": {
+			"center_x": {
+			    "point_estimate": {
+				"value": 0.04
+			    },
+			    "posterior_stats": {
+				"mean": null,
+				"median": null,
+				"percentile_16th": null,
+				"percentile_84th": null
+			    },
+			    "prior": {
+				"type": null
+			    }
+			},
+			"center_y": {
+			    "point_estimate": {
+				"value": 0.05
+			    },
+			    "posterior_stats": {
+				"mean": null,
+				"median": null,
+				"percentile_16th": null,
+				"percentile_84th": null
+			    },
+			    "prior": {
+				"type": null
+			    }
+			},
+			"gamma": {
+			    "point_estimate": {
+				"value": 2.04
+			    },
+			    "posterior_stats": {
+				"mean": null,
+				"median": null,
+				"percentile_16th": null,
+				"percentile_84th": null
+			    },
+			    "prior": {
+				"type": null
+			    }
+			},
+			"phi": {
+			    "point_estimate": {
+				"value": -10
+			    },
+			    "posterior_stats": {
+				"mean": null,
+				"median": null,
+				"percentile_16th": null,
+				"percentile_84th": null
+			    },
+			    "prior": {
+				"type": null
+			    }
+			},
+			"q": {
+			    "point_estimate": {
+				"value": 0.82
+			    },
+			    "posterior_stats": {
+				"mean": null,
+				"median": null,
+				"percentile_16th": null,
+				"percentile_84th": null
+			    },
+			    "prior": {
+				"type": null
+			    }
+			},
+			"theta_E": {
+			    "point_estimate": {
+				"value": 1.55
+			    },
+			    "posterior_stats": {
+				"mean": null,
+				"median": null,
+				"percentile_16th": null,
+				"percentile_84th": null
+			    },
+			    "prior": {
+				"type": null
+			    }
+			}
+		    },
+		    "type": "PEMD"
+		}
+	    ],
+	    "name": "a lens galaxy",
+	    "redshift": 0.2,
+	    "type": "Galaxy"
+	},
+	{
+	    "light_model": [
+		{
+		   "parameters": {
+		      "pixels": {
+			"field_of_view_x": [-2.0,2.0],
+			"field_of_view_y": [-2.0,2.0],
+			"fits_file": {
+				"path": "source2_mag25flux_4arcsecFoV.fits"
+			    },
+			"num_pix_x": 507,
+			"num_pix_y": 507
+		      }
+		    },
+		    "type": "PixelatedRegularGrid"
+		}
+	    ],
+	    "mass_model": [],
+	    "name": "a pixelated source galaxy",
+	    "redshift": 0.6,
+	    "type": "Galaxy"
+	}
+    ],
+    "meta": {},
+    "mode": "MOCK",
+    "observation": {
+	"exposure_time": 2200,
+	"mag_sky_brightness": 22.8,
+	"mag_zero_point": 22.19,
+	"noise": {
+	    "type": "InstrumentalNoise",
+	    "with_readout_noise": true,
+	    "with_sky_shot_noise": true,
+	    "with_target_shot_noise": true
+	},
+	"pixels": {
+	    "field_of_view_x": [-5.0,5.0],
+	    "field_of_view_y": [-5.0,5.0],
+	    "fits_file": {
+		"path": "OBS_HST_WFPC2-F814W.fits"
+	    },
+	    "num_pix_x": 100,
+	    "num_pix_y": 100
+	}
+    },
+    "standard": "COOLEST"
+}

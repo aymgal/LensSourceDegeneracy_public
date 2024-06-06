@@ -1,0 +1,884 @@
+{
+  "py/object": "coolest.template.standard.COOLEST",
+  "mode": "MAP",
+  "coordinates_origin": {
+    "py/object": "coolest.template.classes.coordinates.CoordinatesOrigin",
+    "ra": "00h00m00s",
+    "dec": "+00d00m00s"
+  },
+  "lensing_entities": {
+    "py/object": "coolest.template.classes.lensing_entity_list.LensingEntityList",
+    "py/seq": [
+      {
+        "py/object": "coolest.template.classes.mass_field.MassField",
+        "type": "MassField",
+        "name": "an external shear",
+        "redshift": 1,
+        "mass_model": {
+          "py/object": "coolest.template.classes.mass_light_model.MassModel",
+          "py/seq": [
+            {
+              "py/object": "coolest.template.classes.profiles.mass.ExternalShear",
+              "type": "ExternalShear",
+              "documentation": "External shear defined with a strength and orientation",
+              "id": "0-massfield-mass-0-ExternalShear",
+              "parameters": {
+                "gamma_ext": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Strength of external shear",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": 0.0,
+                    "max_value": 1.0
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 0.03623156109719607
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 0.03605732569564174,
+                    "median": 0.036140636477778085,
+                    "percentile_16th": 0.03382067279047609,
+                    "percentile_84th": 0.03817598297355243
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$\\gamma_{\\rm ext}$",
+                  "id": "0-massfield-mass-0-ExternalShear-gamma_ext"
+                },
+                "phi_ext": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Orientation of external shear",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": -90.0,
+                    "max_value": 90.0
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 19.444904653077543
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 19.129646354037455,
+                    "median": 19.12218823368751,
+                    "percentile_16th": 16.86798433033924,
+                    "percentile_84th": 21.377372781298234
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$\\phi_{\\rm ext}$",
+                  "id": "0-massfield-mass-0-ExternalShear-phi_ext"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "py/object": "coolest.template.classes.galaxy.Galaxy",
+        "type": "galaxy",
+        "name": "a lens galaxy",
+        "redshift": 1,
+        "mass_model": {
+          "py/object": "coolest.template.classes.mass_light_model.MassModel",
+          "py/seq": [
+            {
+              "py/object": "coolest.template.classes.profiles.mass.PEMD",
+              "type": "PEMD",
+              "documentation": "Powerlaw elliptical mass distribution",
+              "id": "1-galaxy-mass-0-PEMD",
+              "parameters": {
+                "gamma": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Mass density slope at Einstein radius",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": 1.0,
+                    "max_value": 3.0
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 2.046660708867312
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 2.050879155286551,
+                    "median": 2.050770359892482,
+                    "percentile_16th": 2.029835594078568,
+                    "percentile_84th": 2.0718992224797295
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$\\gamma$",
+                  "id": "1-galaxy-mass-0-PEMD-gamma"
+                },
+                "theta_E": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Einstein radius",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": 0.0,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 1.5499070841436835
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 1.5500113454224351,
+                    "median": 1.5500436638148813,
+                    "percentile_16th": 1.5486586589238138,
+                    "percentile_84th": 1.5512989831174828
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$\\theta_{\\rm E}$",
+                  "id": "1-galaxy-mass-0-PEMD-theta_E"
+                },
+                "q": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Axis ratio, semi-minor axis / semi-major axis",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": 0.0,
+                    "max_value": 1.0
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 0.827735907554667
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 0.8247877833338638,
+                    "median": 0.8249259351797875,
+                    "percentile_16th": 0.8131397186880868,
+                    "percentile_84th": 0.8366004051319198
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$q$",
+                  "id": "1-galaxy-mass-0-PEMD-q"
+                },
+                "phi": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Position angle",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": -90.0,
+                    "max_value": 90.0
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": -5.775024917928192
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": -6.21394868563844,
+                    "median": -6.2327660624773955,
+                    "percentile_16th": -7.837941561631851,
+                    "percentile_84th": -4.64983776579317
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$\\phi$",
+                  "id": "1-galaxy-mass-0-PEMD-phi"
+                },
+                "center_x": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Profile center along x coordinates",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": null,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 0.02614400057003664
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 0.026246695566863106,
+                    "median": 0.026281882601904505,
+                    "percentile_16th": 0.028729157328100625,
+                    "percentile_84th": 0.023833158708738023
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$x_0$",
+                  "id": "1-galaxy-mass-0-PEMD-center_x"
+                },
+                "center_y": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Profile center along y coordinates",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": null,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 0.04518248539710338
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 0.04539732833260212,
+                    "median": 0.04536801971675435,
+                    "percentile_16th": 0.042881851277770146,
+                    "percentile_84th": 0.04790824367377674
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$y_0$",
+                  "id": "1-galaxy-mass-0-PEMD-center_y"
+                }
+              }
+            }
+          ]
+        },
+        "light_model": {
+          "py/object": "coolest.template.classes.mass_light_model.LightModel",
+          "py/seq": []
+        }
+      },
+      {
+        "py/object": "coolest.template.classes.galaxy.Galaxy",
+        "type": "galaxy",
+        "name": "an analytical source galaxy",
+        "redshift": 2,
+        "mass_model": {
+          "py/object": "coolest.template.classes.mass_light_model.MassModel",
+          "py/seq": []
+        },
+        "light_model": {
+          "py/object": "coolest.template.classes.mass_light_model.LightModel",
+          "py/seq": [
+            {
+              "py/object": "coolest.template.classes.profiles.light.Sersic",
+              "type": "Sersic",
+              "documentation": "Elliptical Sersic",
+              "id": "2-galaxy-light-0-Sersic",
+              "parameters": {
+                "I_eff": {
+                  "py/object": "coolest.template.classes.parameter.LinearParameter",
+                  "documentation": "Amplitude at the Sersic radius",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": 0.0,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 4.698788287659304
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 4.675771943344666,
+                    "median": 4.670276971204208,
+                    "percentile_16th": 4.385379697512501,
+                    "percentile_84th": 4.95933713816886
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$I_{\\rm eff }$",
+                  "id": "2-galaxy-light-0-Sersic-I_eff"
+                },
+                "theta_eff": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Sersic (half-light) radius",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": 0.0,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 0.38370314926814825
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 0.3864087941322785,
+                    "median": 0.3864342228006582,
+                    "percentile_16th": 0.3764507383545871,
+                    "percentile_84th": 0.39658691347383834
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$\\theta_{\\rm eff}$",
+                  "id": "2-galaxy-light-0-Sersic-R_sersic"
+                },
+                "n": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Sersic index",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": 0.5,
+                    "max_value": 10.0
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 1.5962557129316524
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 1.587345445554441,
+                    "median": 1.5863823830013475,
+                    "percentile_16th": 1.5493441600017055,
+                    "percentile_84th": 1.6257189506039356
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$n_{\\rm Sersic}$",
+                  "id": "2-galaxy-light-0-Sersic-n"
+                },
+                "q": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Axis ratio, semi-minor axis / semi-major axis",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": 0.0,
+                    "max_value": 1.0
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 0.6145202096719032
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 0.6127634265963546,
+                    "median": 0.6126081920069757,
+                    "percentile_16th": 0.6025411992799359,
+                    "percentile_84th": 0.6229043206172397
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$q$",
+                  "id": "2-galaxy-light-0-Sersic-q"
+                },
+                "phi": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Position angle",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": -90.0,
+                    "max_value": 90.0
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 42.1573829358732
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 42.289216339356166,
+                    "median": 42.26550934980598,
+                    "percentile_16th": 41.389620380177604,
+                    "percentile_84th": 43.20098935174493
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$\\phi$",
+                  "id": "2-galaxy-light-0-Sersic-phi"
+                },
+                "center_x": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Profile center along x coordinates",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": null,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": -0.01352145669686161
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": -0.01456870584636571,
+                    "median": -0.014590313416815194,
+                    "percentile_16th": -0.011520227425710634,
+                    "percentile_84th": -0.017480176285023095
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$x_0$",
+                  "id": "2-galaxy-light-0-Sersic-center_x"
+                },
+                "center_y": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Profile center along y coordinates",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": null,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 0.008254384082452952
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 0.0077553272015086685,
+                    "median": 0.0077711379811974905,
+                    "percentile_16th": 0.00512211057252965,
+                    "percentile_84th": 0.010338128979079536
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$y_0$",
+                  "id": "2-galaxy-light-0-Sersic-center_y"
+                }
+              }
+            },
+            {
+              "py/object": "coolest.template.classes.profiles.light.Shapelets",
+              "type": "Shapelets",
+              "documentation": "Surface brightness described by a shapelet basis set.",
+              "id": "2-galaxy-light-1-Shapelets",
+              "parameters": {
+                "amps": {
+                  "py/object": "coolest.template.classes.parameter.LinearParameter",
+                  "documentation": "Set of amplitude values for each shapelet function",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": null,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": [
+                      -32.738961152547574,
+                      8.17808889488323,
+                      10.669802488325466,
+                      -1.1567045298032494,
+                      4.900778641333676,
+                      -4.653140487784515,
+                      0.4177298890012577,
+                      -2.5026727361960748,
+                      -2.70805928329827,
+                      1.0823810782408534,
+                      -1.526797089214853,
+                      1.0291704035172082,
+                      -0.930788374783883,
+                      2.1486377811253976,
+                      -0.6066943764087982,
+                      2.2359737086812395,
+                      0.7873347862241193,
+                      1.9467207440387817,
+                      2.8825904919744363,
+                      0.6816380190777827,
+                      3.7507889001872727
+                    ]
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": [
+                      -31.940868386609207,
+                      7.9324448886915695,
+                      10.478741443213059,
+                      -1.1479179262641328,
+                      4.892019735751854,
+                      -4.568466220096747,
+                      0.4432248106054376,
+                      -2.36578403359406,
+                      -2.6871330483293665,
+                      1.1896307428320945,
+                      -1.4162210483539224,
+                      0.9861601070956739,
+                      -0.8790107499603224,
+                      2.0918230017783186,
+                      -0.4995539943864729,
+                      2.210185331712065,
+                      0.7568267470944062,
+                      1.8748117144913028,
+                      2.833130604566664,
+                      0.6333558877948879,
+                      3.635433508414544
+                    ],
+                    "median": [
+                      -31.77049596090163,
+                      7.925090134512825,
+                      10.473790852958562,
+                      -1.1157839012691106,
+                      4.910018837282575,
+                      -4.551036268474766,
+                      0.4492120078114167,
+                      -2.3784098295793696,
+                      -2.695012672473521,
+                      1.1955887336971258,
+                      -1.3981182811051323,
+                      0.9855248035591695,
+                      -0.8864560330589601,
+                      2.0870820849603717,
+                      -0.4926194922555433,
+                      2.2099733976491898,
+                      0.7596103609154001,
+                      1.8748372944666296,
+                      2.837703620112181,
+                      0.6329314727734954,
+                      3.641505945132572
+                    ],
+                    "percentile_16th": [
+                      -34.42533308826528,
+                      9.257114538589034,
+                      9.493051096202265,
+                      -1.7148704613695598,
+                      5.465806201688052,
+                      -5.117190152596567,
+                      0.6160828654078566,
+                      -2.761545178827724,
+                      -2.406291780170757,
+                      0.797847314123896,
+                      -1.7675878542696157,
+                      1.2244562590652506,
+                      -1.2463172759340924,
+                      2.3593940711785066,
+                      -0.914653386244424,
+                      2.415082654646648,
+                      0.592059234980111,
+                      2.1060553787770266,
+                      2.600744728437377,
+                      0.8072551000597404,
+                      3.3436339545568536
+                    ],
+                    "percentile_84th": [
+                      -29.601370425520717,
+                      6.613847900804143,
+                      11.450757117837703,
+                      -0.6049582526998708,
+                      4.332001584670998,
+                      -4.033239675343813,
+                      0.26772658749799205,
+                      -1.969152493247384,
+                      -2.9615389344172316,
+                      1.5693543552740754,
+                      -1.0718122805623087,
+                      0.7522745176219482,
+                      -0.5044394989047257,
+                      1.8297672193696584,
+                      -0.06784772595735343,
+                      2.00077453954299,
+                      0.9230256484870866,
+                      1.6468501284142332,
+                      3.0651237860074017,
+                      0.4634952784048038,
+                      3.909201613105593
+                    ]
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$A$",
+                  "id": "2-galaxy-light-1-Shapelets-A"
+                },
+                "beta": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Shapelet characteristic scale",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": 0.0,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 0.1353902750918525
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 0.13688080486910062,
+                    "median": 0.13702456184701037,
+                    "percentile_16th": 0.13258473820868766,
+                    "percentile_84th": 0.14091392228382263
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$\\beta$",
+                  "id": "2-galaxy-light-1-Shapelets-beta"
+                },
+                "n_max": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Maximum order of the Shapelet decomposition",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": null,
+                    "max_value": null
+                  },
+                  "fixed": true,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 5
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 5.0,
+                    "median": 5.0,
+                    "percentile_16th": 5.0,
+                    "percentile_84th": 5.0
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$n_{\\rm max}$",
+                  "id": "2-galaxy-light-1-Shapelet-n_max"
+                },
+                "center_x": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Shapelets center along x coordinates",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": null,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 0.002381365670781606
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": -0.00019967041619090907,
+                    "median": -4.746796922892524e-05,
+                    "percentile_16th": 0.009513018441692368,
+                    "percentile_84th": -0.010403041872905775
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$x_0$",
+                  "id": "2-galaxy-light-1-Shapelets-center_x"
+                },
+                "center_y": {
+                  "py/object": "coolest.template.classes.parameter.NonLinearParameter",
+                  "documentation": "Shapelets center along y coordinates",
+                  "units": null,
+                  "definition_range": {
+                    "py/object": "coolest.template.classes.parameter.DefinitionRange",
+                    "min_value": null,
+                    "max_value": null
+                  },
+                  "fixed": false,
+                  "point_estimate": {
+                    "py/object": "coolest.template.classes.parameter.PointEstimate",
+                    "value": 0.07179628703699471
+                  },
+                  "posterior_stats": {
+                    "py/object": "coolest.template.classes.probabilities.PosteriorStatistics",
+                    "mean": 0.07273459220825075,
+                    "median": 0.07233076289378546,
+                    "percentile_16th": 0.06515333261271769,
+                    "percentile_84th": 0.08058980042603744
+                  },
+                  "prior": {
+                    "py/object": "coolest.template.classes.probabilities.Prior",
+                    "type": null
+                  },
+                  "latex_str": "$y_0$",
+                  "id": "2-galaxy-light-1-Shapelets-center_y"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "observation": {
+    "py/object": "coolest.template.classes.observation.Observation",
+    "pixels": {
+      "py/object": "coolest.template.classes.grid.PixelatedRegularGrid",
+      "fits_file": {
+        "py/object": "coolest.template.classes.fits_file.FitsFile",
+        "path": "OBS_HST_WFPC2-F814W.fits"
+      },
+      "documentation": "",
+      "field_of_view_x": {
+        "py/tuple": [
+          -5,
+          5
+        ]
+      },
+      "field_of_view_y": {
+        "py/tuple": [
+          -5,
+          5
+        ]
+      },
+      "num_pix_x": 100,
+      "num_pix_y": 100
+    },
+    "exposure_time": null,
+    "mag_zero_point": null,
+    "mag_sky_brightness": null,
+    "noise": {
+      "py/object": "coolest.template.classes.noise.NoiseMap",
+      "type": "NoiseMap",
+      "noise_map": {
+        "py/object": "coolest.template.classes.grid.PixelatedRegularGrid",
+        "fits_file": {
+          "py/object": "coolest.template.classes.fits_file.FitsFile",
+          "path": "HST_WFPC2-F814W_sigma_map.fits"
+        },
+        "documentation": "",
+        "field_of_view_x": {
+          "py/tuple": [
+            -5,
+            5
+          ]
+        },
+        "field_of_view_y": {
+          "py/tuple": [
+            -5,
+            5
+          ]
+        },
+        "num_pix_x": 100,
+        "num_pix_y": 100
+      }
+    },
+    "documentation": ""
+  },
+  "instrument": {
+    "py/object": "coolest.template.classes.instrument.Instrument",
+    "name": "HST/WFPC2",
+    "band": "F814W",
+    "pixel_size": 0.1,
+    "readout_noise": null,
+    "psf": {
+      "py/object": "coolest.template.classes.psf.PixelatedPSF",
+      "type": "PixelatedPSF",
+      "description": null,
+      "pixels": {
+        "py/object": "coolest.template.classes.grid.PixelatedRegularGrid",
+        "fits_file": {
+          "py/object": "coolest.template.classes.fits_file.FitsFile",
+          "path": "psf_obs.fits"
+        },
+        "field_of_view_x": {
+          "py/tuple": [
+            -3.05,
+            3.05
+          ]
+        },
+        "field_of_view_y": {
+          "py/tuple": [
+            -3.05,
+            3.05
+          ]
+        },
+        "num_pix_x": 61,
+        "num_pix_y": 61
+      }
+    }
+  },
+  "cosmology": {
+    "py/object": "coolest.template.classes.cosmology.Cosmology",
+    "H0": 73.0,
+    "Om0": 0.3,
+    "astropy_name": "FlatLambdaCDM"
+  },
+  "standard": "COOLEST",
+  "meta": {"chain_file_name": "mcmc_chains_coolest.csv"},
+  "likelihoods": {
+    "py/object": "coolest.template.classes.likelihood_list.DataLikelihoodList",
+    "py/seq": [
+        {
+            "py/object": "coolest.template.classes.likelihood.ImagingDataLikelihood",
+            "type": "ImagingDataLikelihood",
+            "mask": {
+                "py/object": "coolest.template.classes.grid.PixelatedRegularGrid",
+                "fits_file": {
+                  "py/object": "coolest.template.classes.fits_file.FitsFile",
+                  "path": "lenstronomy_likelihood_mask.fits"
+                },
+                "documentation": "",
+                "field_of_view_x": {
+                  "py/tuple": [
+                    -5,
+                    5
+                  ]
+                },
+                "field_of_view_y": {
+                  "py/tuple": [
+                    -5,
+                    5
+                  ]
+                },
+                "num_pix_x": 100,
+                "num_pix_y": 100 
+           }
+        }
+    ]
+  }
+}

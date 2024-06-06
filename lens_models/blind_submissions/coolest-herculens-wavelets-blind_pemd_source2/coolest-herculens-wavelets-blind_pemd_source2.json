@@ -1,0 +1,290 @@
+{
+  "coordinates_origin": {
+    "dec": "+00d00m00s",
+    "ra": "00h00m00s"
+  },
+  "cosmology": {
+    "H0": 73.0,
+    "Om0": 0.3,
+    "astropy_name": "FlatLambdaCDM"
+  },
+  "instrument": {
+    "band": "",
+    "name": "",
+    "pixel_size": 0.10000000000000003,
+    "psf": {
+      "description": "PSF provided with the mock",
+      "pixels": {
+        "field_of_view_x": [
+          0,
+          4.100000000000001
+        ],
+        "field_of_view_y": [
+          0,
+          4.100000000000001
+        ],
+        "fits_file": {
+          "path": "psf.fits"
+        },
+        "num_pix_x": 41,
+        "num_pix_y": 41
+      },
+      "type": "PixelatedPSF"
+    },
+    "readout_noise": 0.0
+  },
+  "lensing_entities": [
+    {
+      "mass_model": [
+        {
+          "id": "0-massfield-mass-0-ExternalShear",
+          "parameters": {
+            "gamma_ext": {
+              "fixed": false,
+              "id": "0-massfield-mass-0-ExternalShear-gamma_ext",
+              "point_estimate": {
+                "value": 0.03398340940475464
+              },
+              "posterior_stats": {
+                "mean": 0.03197654336690903,
+                "median": 0.03221772983670235,
+                "percentile_16th": 0.02973070554435253,
+                "percentile_84th": 0.03413814797997475
+              },
+              "prior": {
+                "type": null
+              }
+            },
+            "phi_ext": {
+              "fixed": false,
+              "id": "0-massfield-mass-0-ExternalShear-phi_ext",
+              "point_estimate": {
+                "value": 13.830720753447453
+              },
+              "posterior_stats": {
+                "mean": 14.575522422790527,
+                "median": 14.642685413360596,
+                "percentile_16th": 12.38138641357422,
+                "percentile_84th": 16.81243179321289
+              },
+              "prior": {
+                "type": null
+              }
+            }
+          },
+          "type": "ExternalShear"
+        }
+      ],
+      "name": "External shear",
+      "redshift": 0.5,
+      "type": "MassField"
+    },
+    {
+      "light_model": [],
+      "mass_model": [
+        {
+          "id": "1-galaxy-mass-0-PEMD",
+          "parameters": {
+            "center_x": {
+              "fixed": false,
+              "id": "1-galaxy-mass-0-PEMD-center_x",
+              "point_estimate": {
+                "value": 0.03248719871044159
+              },
+              "posterior_stats": {
+                "mean": 0.032056502997875214,
+                "median": 0.03192664869129658,
+                "percentile_16th": 0.027245631068944932,
+                "percentile_84th": 0.03660466849803925
+              },
+              "prior": {
+                "type": null
+              }
+            },
+            "center_y": {
+              "fixed": false,
+              "id": "1-galaxy-mass-0-PEMD-center_y",
+              "point_estimate": {
+                "value": 0.0514201782643795
+              },
+              "posterior_stats": {
+                "mean": 0.048233937472105026,
+                "median": 0.04854960925877094,
+                "percentile_16th": 0.04408214047551155,
+                "percentile_84th": 0.0521725195646286
+              },
+              "prior": {
+                "type": null
+              }
+            },
+            "gamma": {
+              "fixed": false,
+              "id": "1-galaxy-mass-0-PEMD-gamma",
+              "point_estimate": {
+                "value": 2.063478708267212
+              },
+              "posterior_stats": {
+                "mean": 2.063157081604004,
+                "median": 2.0642768144607544,
+                "percentile_16th": 2.04061146736145,
+                "percentile_84th": 2.0836821365356446
+              },
+              "prior": {
+                "type": null
+              }
+            },
+            "phi": {
+              "fixed": false,
+              "id": "1-galaxy-mass-0-PEMD-phi",
+              "point_estimate": {
+                "value": -9.794036865234375
+              },
+              "posterior_stats": {
+                "mean": 169.91355895996094,
+                "median": 169.8262939453125,
+                "percentile_16th": 168.46816040039062,
+                "percentile_84th": 171.42807250976563
+              },
+              "prior": {
+                "type": null
+              }
+            },
+            "q": {
+              "fixed": false,
+              "id": "1-galaxy-mass-0-PEMD-q",
+              "point_estimate": {
+                "value": 0.8033353090286255
+              },
+              "posterior_stats": {
+                "mean": 0.8093992471694946,
+                "median": 0.8089669346809387,
+                "percentile_16th": 0.7974092674255371,
+                "percentile_84th": 0.8235766077041626
+              },
+              "prior": {
+                "type": null
+              }
+            },
+            "theta_E": {
+              "fixed": false,
+              "id": "1-galaxy-mass-0-PEMD-theta_E",
+              "point_estimate": {
+                "value": 1.551440715789795
+              },
+              "posterior_stats": {
+                "mean": 1.5506051778793335,
+                "median": 1.5505902171134949,
+                "percentile_16th": 1.5492793321609497,
+                "percentile_84th": 1.5519248247146606
+              },
+              "prior": {
+                "type": null
+              }
+            }
+          },
+          "type": "PEMD"
+        }
+      ],
+      "name": "Main deflector",
+      "redshift": 0.5,
+      "type": "Galaxy"
+    },
+    {
+      "light_model": [
+        {
+          "id": "2-galaxy-light-0-PixelatedRegularGrid",
+          "parameters": {
+            "pixels": {
+              "field_of_view_x": [
+                -1.7607869505882263,
+                1.7784213423728943
+              ],
+              "field_of_view_y": [
+                -1.7660577893257141,
+                1.7731505036354065
+              ],
+              "fits_file": {
+                "path": "model-source-coolest-herculens-wavelets-blind_pemd_source2.fits"
+              },
+              "id": "2-galaxy-light-0-PixelatedRegularGrid-pixels",
+              "num_pix_x": 120,
+              "num_pix_y": 120
+            }
+          },
+          "type": "PixelatedRegularGrid"
+        }
+      ],
+      "mass_model": [],
+      "name": "Source galaxy",
+      "redshift": 2.0,
+      "type": "Galaxy"
+    }
+  ],
+  "meta": {
+    "best_fit_reduced_chi2": 0.7990096211433411,
+    "chain_file_name": "coolest-herculens-wavelets-blind_pemd_source2-samples.csv",
+    "model_choice": "pixelated source model with wavelet regularization",
+    "modeling_code": "Herculens (v0.0.1)"
+  },
+  "mode": "MAP",
+  "observation": {
+    "exposure_time": null,
+    "mag_sky_brightness": null,
+    "mag_zero_point": null,
+    "noise": {
+      "noise_map": {
+        "field_of_view_x": [
+          -3.4,
+          3.4
+        ],
+        "field_of_view_y": [
+          -3.4,
+          3.4
+        ],
+        "fits_file": {
+          "path": "noise_map.fits"
+        },
+        "num_pix_x": 68,
+        "num_pix_y": 68
+      },
+      "type": "NoiseMap"
+    },
+    "pixels": {
+      "field_of_view_x": [
+        -3.4,
+        3.4
+      ],
+      "field_of_view_y": [
+        -3.4,
+        3.4
+      ],
+      "fits_file": {
+        "path": "obs.fits"
+      },
+      "num_pix_x": 68,
+      "num_pix_y": 68
+    }
+  },
+  "standard": "COOLEST",
+  "likelihoods": [
+        {
+            "mask": 
+            {
+                "field_of_view_x": [
+                -3.4,
+                3.4
+                ],
+                "field_of_view_y": [
+                -3.4,
+                3.4
+                ],
+                "fits_file": {
+                "path": "mask-likelihood.fits"
+                },
+                "num_pix_x": 68,
+                "num_pix_y": 68
+            },
+            "type": "ImagingDataLikelihood"
+        }
+    ]
+}
