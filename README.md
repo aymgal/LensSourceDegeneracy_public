@@ -1,6 +1,6 @@
 # LensSourceDegeneracy_public
 
-Publicly shared data and modeling products for paper XXX (__Galan et al. 2024b__).
+Publicly shared data and modeling products for paper **"Exploiting the diversity of modeling methods to probe systematic biases in strong lensing analyses"** (_Galan et al. 2024b, submitted_, [arXiv](https://arxiv.org/abs/2406.08484)).
 
 The content of this repository is as follows:
 
